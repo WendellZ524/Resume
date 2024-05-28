@@ -1,65 +1,152 @@
 /* 定义全局色板 */
 :root {
-    /* 主蓝色，按钮，社交图标 */
     --primary-color: #71b3dd;
-    /* 主蓝色，深，导航 */
     --primary-dark-color: #4489b5;
     --text-color-gray: #8b979f;
     --text-color-light-gray: #c1c7cb;
     --text-color-dark-gray: #5a6f7c;
 }
 
-/* 容器为栅格布局 */
-.container{
-    display: grid;
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color-dark-gray);
+}
+
+.container {
+    width: 210mm; /* A4纸宽度 */
+    margin: auto;
+    padding: 20mm;
     box-shadow: 0px 10px 20px 5px lightgrey;
-    width: 700px;
-    margin: 100px auto;
-}
-.container>div{
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* 划分为4等分,基本信息占3份,你的帅照占1份 */
-.basic-info{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-/* 图片大小调整下,位置也需要进行平移 */
-.me{
-    width: 100%;
-    transform: translate(-40px,30px);
-}
-
-/* 社交按钮部分 */
-footer {
-    margin-top: 20px;
+/* 头部样式 */
+h1 {
     text-align: center;
+    color: var(--primary-dark-color);
+}
+
+h2 {
+    color: var(--primary-dark-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    color: var(--primary-dark-color);
+}
+
+h4 {
+    margin-top: 5px;
+    color: var(--text-color-dark-gray);
+}
+
+h5 {
+    margin-top: 5px;
+    font-style: italic;
+    color: var(--text-color-gray);
+}
+
+/* 信息内容样式 */
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 基本信息样式 */
+.basic-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basic-info .content {
+    flex: 3;
+}
+
+.basic-info aside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic-info img {
+    width: 100px;
+    height: 100/0.618px;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+/* 各个部分样式 */
+.education, .work-exp, .projects, .skills {
+    padding: 10px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 10px 0;
 }
 
 footer ul {
     display: flex;
-}
-footer ul li {
+    justify-content: center;
     list-style: none;
-    margin: auto;
+    padding: 0;
+    margin: 0;
 }
-footer .fab{
-    color: var(--primary-color);
-    font-size: 24px;
+
+footer ul li {
+    margin: 0 10px;
 }
-footer .fas{
+
+footer .fab {
     color: var(--primary-color);
     font-size: 24px;
 }
 
-/* 鼠标悬停,字体颜色变化 */
-h1:hover{
-    color: blue;
-}
-h2:hover{
-    color: blue;
-}
-div p:hover{
+/* 鼠标悬停效果 */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, div p:hover {
     color: var(--primary-color);
+}
+
+/* 打印样式 */
+@media print {
+    body, .container {
+        box-shadow: none;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2, h3, h4, h5, p {
+        page-break-after: avoid; /* 避免元素后分页 */
+    }
+
+    .container {
+        page-break-before: always; /* 页面开始前分页 */
+    }
+}
+
+/* 分页样式 */
+.page-break {
+    page-break-before: always; /* 强制分页 */
 }

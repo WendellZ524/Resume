@@ -3,72 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyResume</title>
+    <title>Markdown to HTML Resume</title>
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1 align="center">Resume</h1>
-        <div class="info-content">
-            <!-- personal information -->
-            <div class="basic-info">
-                <div class="content">
-                    <h2>Information</h2>
-                    <p>
-                        Name：Xiaofeng Zhang <br>
-                        Phone：+86 15392924328 <br>
-                        Email：xiaofzhang1@student.unimelb.edu.au <br>
-                    </p>
-                </div>
-                <!-- Photo -->
-                <aside>
-                    <img class="me" src="./images/personal.jpeg" alt="">
-                </aside>
-
-            </div>
-
-
-            <!-- Education -->
-            <div class="education">
-                <h2>Education</h2>
-                <p> Wuhan University of Technology &nbsp; <i class="far fa-calendar"></i>2016.09~2019.06 &nbsp;
-                    <br>&nbsp; Automation  &nbsp; Bachelor
-                    <br>&nbsp; Wuhan, Hubei, China
-                    <br>&nbsp; Course: Automation System; Robotics; Machine Learning
-                    <br>&nbsp; GPA：xxx  </p>
-                <p> University of California, Riverside &nbsp; <i class="far fa-calendar"></i>2019.09~2020.06 &nbsp;
-                    <br>&nbsp; Electronic and Computer Engeneering  &nbsp; Bachelor
-                    <br>&nbsp; Riverside, California, The US
-                    <br>&nbsp; Courses: Computer Vision; Robotics; Virtual Reality
-                    <br>&nbsp; GPA：xxx  </p>
-                <p> University of Melbourne, &nbsp; <i class="far fa-calendar"></i>2021.03~ &nbsp;
-                    <br>&nbsp; Information Technology - Artificial Intellengence  &nbsp; Master
-                    <br>&nbsp; Melbourne, Victoria, Australia</p>
-
-                    
-            </div>
-            <!-- 3.working experience -->
-            <div class="work-exp">
-                <h2>Research</h2>
-            </div>
-            <!-- Projects -->
-            <div class="Projects">
-                <h2>Projects</h2>
-                <p></p>
-            </div>
-            <!-- Contact -->
-            <footer>
-                <ul>
-                    <!-- git -->
-                    <li>
-                        <a href="https://github.com/WendellZ524">
-                            <i class="fab fa-git"></i>
-                        </a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
+        <h1>Resume</h1>
+        <div id="html-output"></div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

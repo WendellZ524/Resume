@@ -36,14 +36,12 @@
 - **Position**: Research Assitant
 - **Period**：2019-2021
 ### **Responsibilities**:
-- Client Development: Build a digital twin for Toyota Infotech based on Unity Engine. Adapt LGSVL to the original project, and build the communication among SUMO's traffic flow, real-world vehicles, and Unity Engine.
+- Unity Client Development: Build a digital twin for Toyota Infotech based on Unity Engine. Adapt LGSVL to the original project, and build the communication among SUMO's traffic flow, real-world vehicles, and Unity Engine.
 - Tech Art: Optimize graphic performance for PBR rendering to ensure the Oculus Rift2 can run at least 45Hz on RTX2080.
 
 # Other Projects
-## Feature-based IR for indoor localization (2020): Use VGG's muti-scale contrast an image vector as key for image data, and use cosine distance to search related images in the database, use OANet to calculate the query image's orientation & position.
-## Source-free semi-supervised domain adaptation for Image Segmentation (2022): Adapt a trained on GAT5's DeepLabV3 model to the Citysapes dataset via labels from semantic-kitty. 
+## Feature-based IR for indoor localization (2020):
+- Use VGG's muti-scale contrast an image vector as key for image data, and use cosine distance to search related images in the database, use OANet to calculate the query image's orientation & position.
+## Source-free semi-supervised domain adaptation for Image Segmentation (2022):
+- Adapt a trained on GAT5's DeepLabV3 model to the Citysapes dataset via labels from semantic-kitty. 
 
-# Skills
-- Programming Languages: Python, Java, C++
-- Tools: Git, Docker, Jenkins
-- Databases: MySQL, PostgreSQL
