@@ -17,9 +17,19 @@
 - **Period**: 2019 - 2020
 
 # Work Experience
-## Bosch (Chengdu) Information Technology Services Co., Ltd. Shanghai Branch
+## Bosch Innovation and Software Development (Wuxi) Co. Ltd Suzhou Branch
+- **Position**: Video Perception Engineer
+- **Period**: 2024.9 - Present
+### **Responsibilities**:
+#### 3DGS Simulator
+- **3DGS Simulator**: Based on Carla & 3DGS for end2end VLA model validation
+#### Diffusion Based Data Enhancement Pipeline
+- **World Model**: Based on Cosmos-Transfer for Real2Sim2Real task.
+- **ODD Video Generation**: Based on WAN2.1-VACE for ODD video Generation
+
+## Bosch Corporate Research - RIX
 - **Position**: Research Scientist
-- **Period**: 2022 - Present
+- **Period**: 2022.2 - 2024.9
 ### **Responsibilities**:
 #### Ground Truth System
 - **Development Perception model for Grount Truth System**: Based on PersFormer and BEVFusion, use Lidar point as 3D PE to guide the height of BEV feature map. Apply min-cost flow for matching to contrast DETR-like loss.
