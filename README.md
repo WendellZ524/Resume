@@ -17,7 +17,7 @@
 - **Period**: 2019 - 2020
 
 # Work Experience
-## Bosch Innovation and Software Development (Wuxi) Co. Ltd Suzhou Branch
+## Bosch Innovation and Software Development (Wuxi) Co.
 - **Position**: Video Perception Engineer
 - **Period**: 2024.9 - Present
 ### **Responsibilities**:
