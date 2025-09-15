@@ -21,6 +21,10 @@
 - **Position**: Video Perception Engineer
 - **Period**: 2024.9 - Present
 ### **Responsibilities**:
+#### 3DGS 
+- **3DGS**: Reconstruction 3DGS scene for e2e parking training & validation
+- **3DGS**: Lidar-Free 3DGS via VGGT for 3D Assets generation
+
 #### 3DGS Simulator
 - **3DGS Simulator**: Based on Carla & 3DGS for end2end VLA model validation
 #### Diffusion Based Data Enhancement Pipeline
@@ -32,7 +36,7 @@
 - **Period**: 2022.2 - 2024.9
 ### **Responsibilities**:
 #### Ground Truth System
-- **Development Perception model for Grount Truth System**: Based on PersFormer and BEVFusion, use Lidar point as 3D PE to guide the height of BEV feature map. Apply min-cost flow for matching to contrast DETR-like loss.
+- **Development Perception model for Grount Truth System**: Based on PersFormer and BEVFusion. For Monocular-3D Lane Detection task
 - **Data selection**: use Perceptre-hash, Timestamps, and IMU information to select divergence data for human annotation.
 - **Annotation quality check**: use CLIP-IQA to select blurred, bad samples from the dataset. Using Grounded-SAM and other rule-based functions to check lane line labeling quality.
  
