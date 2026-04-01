@@ -1,5 +1,5 @@
 # Xiaofeng Zhang
-wendellz524@gmail.com | (+86) 15392924328 | [可在这里补充你的 LinkedIn 或 GitHub 链接]
+wendellz524@gmail.com | (+86) 15392924328 | [Linked in](https://www.linkedin.com/feed/)
 
 ## Education
 - **The University of Melbourne** | Master of Information Technology | 2021 - 2022
