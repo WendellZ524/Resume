@@ -31,14 +31,14 @@
 #### High-Fidelity Closed-Loop Simulation (3DGS & UE5 & Carla)
 - **Closed-Loop AEB Simulation**: Aligned 3DGS scenes to Unreal Engine 5 (UE5) and reconstructed the Carla simulation engine to enable closed-loop simulation for Autonomous Emergency Braking (AEB) test tracks. 
 - **Dynamic Lighting & Rendering**: Integrated UE5's Lumen global illumination system to achieve dynamic lighting interactions with static 3DGS scenes.
-- **Edge-Case Data Generation**: Generated 1,000 high-quality clips (5s/clip) of AEB test track data, overcoming the physical constraints of domestic test tracks (e.g., inability to support 90km/h speed limits and crash tests), providing crucial synthetic data for extreme driving scenarios.
+- **Edge-Case Data Generation**: Generated 1,000 high-quality clips of AEB test track data, overcoming the physical constraints of domestic test tracks (e.g., inability to support 90km/h speed limits and crash tests), providing crucial synthetic data for extreme driving scenarios.
 
 #### Cross-Domain Data Synthesis
 - **Traffic Sign Pattern Synthesis**: Developed a reverse-integration pipeline to insert UE5 high-fidelity traffic sign assets into 3DGS-reconstructed domestic roads, generating datasets featuring overseas traffic sign patterns.
 - **Image Harmonization**: Applied the Harmonizer framework to optimize lighting and background inconsistencies between the inserted assets and original scenes, enabling highly realistic pixel-level fusion for perception validation.
 
 #### Automated Generative Data Augmentation Pipeline
-- **Rural Road Data Inpainting**: Utilized LaMa (Resolution-robust Inpainting) to erase falsely predicted lane lines in complex rural road scenarios. Engineered a pipeline to generate 10,000 clips (30s/clip) of high-quality augmented data for perception model fine-tuning and robustness enhancement.
+- **Rural Road Data Inpainting**: Utilized LaMa (Resolution-robust Inpainting) to erase falsely predicted lane lines in complex rural road scenarios. Engineered a pipeline to generate 2,000 clips of high-quality augmented data for perception model fine-tuning and robustness enhancement.
 - **Long-Tail Data Balancing via FLUX-fill**: Built an automated image retouching pipeline based on FLUX-fill to directionally augment low-frequency traffic signs, addressing dataset distribution imbalance.
 - **Inference Optimization**: Integrated Nunchaku SVD quantization into the pipeline, compressing the model to run highly efficiently on a single RTX 4090 GPU, significantly reducing the cost of generative data synthesis.
 
